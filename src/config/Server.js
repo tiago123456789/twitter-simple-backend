@@ -15,7 +15,7 @@ require("./Database");
 app.use(bodyParser.json());
 
 // Enable cors on application.
-app.use(cors);
+app.use(cors());
 
 app.use((request, response, next) => {
     request.io = io;
